@@ -11,8 +11,7 @@
 .home>.title h2{    
     text-align: center;            
     font-size: 50px;
-    font-weight: bolder;    
-    box-sizing: border-box;
+    font-weight: bolder;
 }
 .home>.title p{
     text-align: center;
@@ -21,8 +20,8 @@
 .wrap{
     width: 100%;
     margin: auto;
+    margin-top: 40px;
     font-size: 0;
-    /* border: 2px gray solid; */
 }
 .wrap>.row{
     padding: 40px 0;
@@ -34,7 +33,6 @@
 .wrap>.row:nth-child(even){
     direction: rtl;
 }
-
 .wrap>.row>.content,.pic{
     display: inline-block;
     width: 50%;
@@ -45,13 +43,18 @@
     direction: ltr;
 }
 .content h3{
-    font-size: 50px;
+    font-size: 40px;
     display: inline-block;
+    margin-bottom: 20px;
+}
+.content img{
+    margin-bottom: 20px;
+    display: block;
+    
 }
 .content p{
     font-size: 20px;   
-
-    margin-top: 50px ;
+    margin-bottom: 20px;
 }
 .content ul{
     display: flex;
