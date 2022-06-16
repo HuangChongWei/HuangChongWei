@@ -16,7 +16,9 @@
 }
 .home>.title p{
     text-align: center;
-    font-size: 20px;   
+    font-size: 20px;  
+    margin-bottom: 40px;
+
 }
 .wrap{
     width: 100%;
