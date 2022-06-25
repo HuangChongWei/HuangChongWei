@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width: 960px;
+            margin: 30px auto;
+            padding: 30px;
+            outline: 2px solid black;            
+        }
+        .header{
+            width: 50%;
+            margin: auto;
+        }
+        img{
+            width: 100%;
+        }
+        .info{
+            font-size: 30px;
+            font-weight: bold;
+            line-height: 40px;
+        }
+
+        hr{
+            margin: 15px 0;
+        }
+        .pic{
+            display: flex;
+            
+        }
+        .pic div{
+            width: 33.3333%;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="" alt="">
+        </header>
+        <hr>
+        <section class="info">
+            <p>
+            </p>
+        </section>
+        <hr>
+        <section class="pic"></section>
+    </div>
+
+    <script>
+        const headerImg = '/img/me.jpg'
+        let personData = {
+            name: '黃崇瑋',
+            email: 'willy19036@gmail.com',
+            school: '中原大學',
+            habbit: '爬山'
+        }
+        let picArray = ['/img/47.jpg', '/img/dai.jpg', '/img/gold.jpg']
+
+
+        let header = document.querySelector('.header>img')
+        let info = document.querySelector('.info>p')
+        let picArea = document.querySelector('.pic')
+
+        header.src = headerImg
+        info.innerHTML = `
+            <br>姓名:${personData.name}<br>
+            Email:${personData.email}<br>
+            學校:${personData.school}<br>
+            興趣:${personData.habbit}<br>`
+        for(const pic of picArray){
+            picArea.innerHTML += `<div><img src="${pic}"></div>`
+        }
+    </script>
+</body>
+</html>
