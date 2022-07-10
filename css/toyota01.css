@@ -1,0 +1,20 @@
+.wrap{
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.item{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.item A{
+    width: 33.333333%;
+    background-color: #f00;
+    color: #fff;
+    position: relative;
+}
+.item .A h2{
+    font-size: 42px;
+}
+
+

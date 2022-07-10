@@ -1,0 +1,45 @@
+header{    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.iconmenu{
+    width: 30px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 30px 15px;
+    align-items: flex-start;
+
+}
+.iconmenu span{
+    height: 2px;
+    background-color: #518432;
+}
+.iconmenu span:nth-child(1){
+    width: 100%;
+}
+.iconmenu span:nth-child(2){
+    width: 60%;
+}
+.iconmenu span:nth-child(3){
+    width: 40%;
+}
+
+
+.logo img{
+    width: 135px;
+    vertical-align: middle;
+}
+header .icon{
+    margin-right: 15px;
+}
+header .icon i{
+    margin: 5px;
+}
+
+.main_bg img{
+    width: 100%;
+}
